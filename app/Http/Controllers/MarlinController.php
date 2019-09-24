@@ -21,7 +21,7 @@ class MarlinController extends Controller
     function index(OngkirService $service)
     {
         $data = [
-            'province' => []//$service->getProvince()
+            'province' => $service->getProvince()
         ];
 
         return view('marlin-test', $data);
